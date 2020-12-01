@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var ZipcodeField: UITextField!
+    @IBOutlet weak var ErrorMessage: UILabel!
+    var validation = Validation()
     var zipcodeText = ""
     
     //Makes the num keyboard disappear after touch on screen
@@ -19,6 +21,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Search(_ sender: Any) {
+        guard let zip = ZipcodeField.text else {
+                 return
+              }
+        
+        let isValidateZip = self.validation.validaPhoneNumber(input: zip)
+        if (isValidateZip == false) {
+            ErrorMessage.text = "Please Enter a Valid Zipcode."
+           return
+        }
         self.zipcodeText = ZipcodeField.text ?? ""
         performSegue(withIdentifier: "search", sender: self)
     }

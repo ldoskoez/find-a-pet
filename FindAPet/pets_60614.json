@@ -1,0 +1,1654 @@
+{
+  "animals": [
+    {
+      "id": 49693860,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/cat/royal-49693860/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Domestic Short Hair",
+        "secondary": "Calico",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Calico",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Female",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": null,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Royal",
+      "description": "Adult cats are often considered “low maintenance” pets.  While cat ownership will save you from drenching walks in the rain...",
+      "organization_animal_id": "60971",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49693860/1/?bust=1604511534&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49693860/1/?bust=1604511534&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49693860/1/?bust=1604511534&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49693860/1/?bust=1604511534"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49693860/1/?bust=1604511534&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49693860/1/?bust=1604511534&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49693860/1/?bust=1604511534&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49693860/1/?bust=1604511534"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-11-04T17:44:59+0000",
+      "published_at": "2020-11-04T17:44:59+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49693860"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49694026,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/cat/belvin-49694026/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Domestic Short Hair",
+        "secondary": "Tuxedo",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black & White / Tuxedo",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Small",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": true,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": null,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Belvin",
+      "description": "If you’re ready for mischief and breathtaking cuteness, then you’re ready for a kitten! Having a kitten in your home...",
+      "organization_animal_id": "67535",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694026/1/?bust=1604512838&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694026/1/?bust=1604512838&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694026/1/?bust=1604512838&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694026/1/?bust=1604512838"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694026/1/?bust=1604512838&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694026/1/?bust=1604512838&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694026/1/?bust=1604512838&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694026/1/?bust=1604512838"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-11-04T18:03:57+0000",
+      "published_at": "2020-11-04T18:03:57+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49694026"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 45030601,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/darby-missing-45030601/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": "Cattle Dog",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": "White / Cream",
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": false,
+        "cats": false
+      },
+      "tags": [
+        "Playful",
+        "Active",
+        "Affectionate",
+        "Nervous"
+      ],
+      "name": "Darby !!!(MISSING)!!!",
+      "description": "MISSING PAWS DOG: DARBY\n\nDarby is a Lab/Heeler mix weighing approximately 40 lbs. He went missing from the yard of...",
+      "organization_animal_id": "58290",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/3/?bust=1573426265&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/3/?bust=1573426265&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/3/?bust=1573426265&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/3/?bust=1573426265"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/1/?bust=1561051489&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/1/?bust=1561051489&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/1/?bust=1561051489&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/1/?bust=1561051489"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/2/?bust=1561051601&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/2/?bust=1561051601&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/2/?bust=1561051601&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/2/?bust=1561051601"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/3/?bust=1573426265&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/3/?bust=1573426265&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/3/?bust=1573426265&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45030601/3/?bust=1573426265"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2019-06-20T17:28:07+0000",
+      "published_at": "2019-06-20T17:28:07+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/45030601"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 47854519,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/bruno-47854519/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Great Pyrenees",
+        "secondary": "Hound",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Tricolor (Brown, Black, & White)",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": true,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Bruno",
+      "description": "Bruno is a true outdoorsman! He’ll take as much time in nature as you’ll give him and love every minute...",
+      "organization_animal_id": "64424",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/47854519/1/?bust=1587577040&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/47854519/1/?bust=1587577040&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/47854519/1/?bust=1587577040&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/47854519/1/?bust=1587577040"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/47854519/1/?bust=1587577040&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/47854519/1/?bust=1587577040&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/47854519/1/?bust=1587577040&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/47854519/1/?bust=1587577040"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-04-22T17:38:17+0000",
+      "published_at": "2020-04-22T17:38:17+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/47854519"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 48508064,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/scout-48508064/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": false,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Scout",
+      "description": "Scout is looking for an adults only home with no other pets where he can be king of the castle....",
+      "organization_animal_id": "41800",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508064/1/?bust=1594919016&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508064/1/?bust=1594919016&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508064/1/?bust=1594919016&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508064/1/?bust=1594919016"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508064/1/?bust=1594919016&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508064/1/?bust=1594919016&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508064/1/?bust=1594919016&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508064/1/?bust=1594919016"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-07-16T17:08:10+0000",
+      "published_at": "2020-07-16T17:08:10+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/48508064"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 48509194,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/rafi-48509194/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Shepherd",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": false,
+        "dogs": false,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Rafi",
+      "description": "Rafi is an adult dog who needs an adults only home with no other pets. He could find his home...",
+      "organization_animal_id": "58417",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509194/1/?bust=1594923924&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509194/1/?bust=1594923924&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509194/1/?bust=1594923924&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509194/1/?bust=1594923924"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509194/1/?bust=1594923924&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509194/1/?bust=1594923924&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509194/1/?bust=1594923924&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509194/1/?bust=1594923924"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-07-16T18:27:53+0000",
+      "published_at": "2020-07-16T18:27:53+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/48509194"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49106726,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/cat/vance-49106726/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Tabby",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Chocolate Point",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": null,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Vance",
+      "description": "Vance is energetic and likes people (though would love to live in an adults only home with lots of room...",
+      "organization_animal_id": "62738",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106726/1/?bust=1600209501&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106726/1/?bust=1600209501&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106726/1/?bust=1600209501&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106726/1/?bust=1600209501"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106726/1/?bust=1600209501&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106726/1/?bust=1600209501&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106726/1/?bust=1600209501&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106726/1/?bust=1600209501"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-09-15T22:40:59+0000",
+      "published_at": "2020-09-15T22:40:59+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49106726"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49815375,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/arvin-49815375/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Shepherd",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "White / Cream",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Large",
+      "coat": "Medium",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": null,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Arvin",
+      "description": "To look at this big beautiful boy you would think nothing could make him nervous but looks can be deceiving....",
+      "organization_animal_id": "66592",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815375/1/?bust=1605637546&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815375/1/?bust=1605637546&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815375/1/?bust=1605637546&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815375/1/?bust=1605637546"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815375/1/?bust=1605637546&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815375/1/?bust=1605637546&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815375/1/?bust=1605637546&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815375/1/?bust=1605637546"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-11-17T18:26:41+0000",
+      "published_at": "2020-11-17T18:26:41+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49815375"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49815476,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/jensen-49815476/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Australian Cattle Dog / Blue Heeler",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Tricolor (Brown, Black, & White)",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Medium",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": true,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Jensen",
+      "description": "If you don’t want to start from scratch with a puppy and you want a stalwart friend by your side...",
+      "organization_animal_id": "67596",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815476/1/?bust=1605638167&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815476/1/?bust=1605638167&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815476/1/?bust=1605638167&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815476/1/?bust=1605638167"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815476/1/?bust=1605638167&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815476/1/?bust=1605638167&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815476/1/?bust=1605638167&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815476/1/?bust=1605638167"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-11-17T18:36:55+0000",
+      "published_at": "2020-11-17T18:36:55+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49815476"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 46881780,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/chestnut-46881780/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Brindle",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": false,
+        "cats": false
+      },
+      "tags": [
+        "Calm",
+        "Gentle",
+        "Nervous"
+      ],
+      "name": "Chestnut",
+      "description": "One look in Chestnut&#039;s eyes and your heart will melt! This sweet brindle Labrador Retriever mix is looking for a...",
+      "organization_animal_id": "50491",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/1/?bust=1576692115&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/1/?bust=1576692115&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/1/?bust=1576692115&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/1/?bust=1576692115"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/2/?bust=1576692118&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/2/?bust=1576692118&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/2/?bust=1576692118&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/2/?bust=1576692118"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/3/?bust=1576692123&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/3/?bust=1576692123&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/3/?bust=1576692123&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/3/?bust=1576692123"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/4/?bust=1576692127&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/4/?bust=1576692127&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/4/?bust=1576692127&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/4/?bust=1576692127"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/1/?bust=1576692115&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/1/?bust=1576692115&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/1/?bust=1576692115&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46881780/1/?bust=1576692115"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2019-12-18T18:04:04+0000",
+      "published_at": "2019-12-18T18:04:04+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/46881780"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 48507704,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/buddy-48507704/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Gray / Blue / Silver",
+        "secondary": "White / Cream",
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": false,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Buddy",
+      "description": "Buddy is an adult dog who needs an adults only home that is pet free. He could find his home...",
+      "organization_animal_id": "66022",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48507704/1/?bust=1594917325&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48507704/1/?bust=1594917325&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48507704/1/?bust=1594917325&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48507704/1/?bust=1594917325"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48507704/1/?bust=1594917325&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48507704/1/?bust=1594917325&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48507704/1/?bust=1594917325&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48507704/1/?bust=1594917325"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-07-16T16:38:02+0000",
+      "published_at": "2020-07-16T16:38:02+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/48507704"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 48508414,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/cat/azul-48508414/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black & White / Tuxedo",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": null,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Azul",
+      "description": "Azul is one cool dude. He is very loving and sweet. His foster family reports that he walked around chortling...",
+      "organization_animal_id": "65329",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508414/1/?bust=1594920735&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508414/1/?bust=1594920735&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508414/1/?bust=1594920735&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508414/1/?bust=1594920735"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508414/1/?bust=1594920735&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508414/1/?bust=1594920735&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508414/1/?bust=1594920735&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48508414/1/?bust=1594920735"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-07-16T17:35:48+0000",
+      "published_at": "2020-07-16T17:35:48+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/48508414"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 48509226,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/alistair-48509226/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Tricolor (Brown, Black, & White)",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Large",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": true,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Alistair",
+      "description": "Alistair is an adult dog who needs to find his adults only home that has a playful resident dog, no...",
+      "organization_animal_id": "61012",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509226/1/?bust=1594924168&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509226/1/?bust=1594924168&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509226/1/?bust=1594924168&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509226/1/?bust=1594924168"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509226/1/?bust=1594924168&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509226/1/?bust=1594924168&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509226/1/?bust=1594924168&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48509226/1/?bust=1594924168"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-07-16T18:32:41+0000",
+      "published_at": "2020-07-16T18:32:41+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/48509226"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 48703957,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/cat/azul-48703957/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black & White / Tuxedo",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": null,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Azul",
+      "description": "Adult cats are often considered “low maintenance” pets.  While cat ownership will save you from drenching walks in the rain...",
+      "organization_animal_id": "65329",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48703957/1/?bust=1596735609&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48703957/1/?bust=1596735609&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48703957/1/?bust=1596735609&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48703957/1/?bust=1596735609"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48703957/1/?bust=1596735609&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48703957/1/?bust=1596735609&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48703957/1/?bust=1596735609&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48703957/1/?bust=1596735609"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-08-06T17:41:11+0000",
+      "published_at": "2020-08-06T17:41:11+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/48703957"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49106778,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/cat/hansel-49106778/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Tabby",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Buff / Tan / Fawn",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": true,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Hansel",
+      "description": "Hansel likely spent most of his early days living outside, but this gentle boy let his outdoor caretaker know that...",
+      "organization_animal_id": "65428",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106778/1/?bust=1600209909&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106778/1/?bust=1600209909&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106778/1/?bust=1600209909&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106778/1/?bust=1600209909"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106778/1/?bust=1600209909&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106778/1/?bust=1600209909&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106778/1/?bust=1600209909&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49106778/1/?bust=1600209909"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-09-15T22:49:45+0000",
+      "published_at": "2020-09-15T22:49:45+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49106778"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49694316,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/cat/naya-49694316/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Exotic Shorthair",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Calico",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Female",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": true,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Naya",
+      "description": "Adult cats are often considered “low maintenance” pets, but they do have their own specific needs. Cats love to channel...",
+      "organization_animal_id": "53807",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694316/1/?bust=1604513424&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694316/1/?bust=1604513424&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694316/1/?bust=1604513424&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694316/1/?bust=1604513424"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694316/1/?bust=1604513424&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694316/1/?bust=1604513424&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694316/1/?bust=1604513424&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694316/1/?bust=1604513424"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-11-04T18:11:37+0000",
+      "published_at": "2020-11-04T18:11:37+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49694316"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49694425,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/cat/packer-49694425/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Exotic Shorthair",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Calico",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": true,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Packer",
+      "description": "Adult cats are often considered “low maintenance” pets, but they do have their own specific needs. Cats love to channel...",
+      "organization_animal_id": "53815",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694425/1/?bust=1604513611&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694425/1/?bust=1604513611&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694425/1/?bust=1604513611&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694425/1/?bust=1604513611"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694425/1/?bust=1604513611&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694425/1/?bust=1604513611&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694425/1/?bust=1604513611&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49694425/1/?bust=1604513611"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-11-04T18:16:41+0000",
+      "published_at": "2020-11-04T18:16:41+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49694425"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49815251,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/cat/ryker-49815251/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black & White / Tuxedo",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": false,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Ryker",
+      "description": "Ryker is a sweet and handsome boy who is looking for his perfect forever home! One of Ryker’s favorite activities...",
+      "organization_animal_id": "30448",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815251/1/?bust=1605636859&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815251/1/?bust=1605636859&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815251/1/?bust=1605636859&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815251/1/?bust=1605636859"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815251/1/?bust=1605636859&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815251/1/?bust=1605636859&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815251/1/?bust=1605636859&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815251/1/?bust=1605636859"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-11-17T18:16:47+0000",
+      "published_at": "2020-11-17T18:16:47+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49815251"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49815317,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/tea-49815317/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": true,
+        "cats": false
+      },
+      "tags": [],
+      "name": "Tea",
+      "description": "Tea is ready to develop ( we so wanted to say steep ) into her best self! She is energetic...",
+      "organization_animal_id": "67308",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815317/1/?bust=1605637242&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815317/1/?bust=1605637242&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815317/1/?bust=1605637242&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815317/1/?bust=1605637242"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815317/1/?bust=1605637242&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815317/1/?bust=1605637242&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815317/1/?bust=1605637242&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815317/1/?bust=1605637242"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-11-17T18:22:50+0000",
+      "published_at": "2020-11-17T18:22:50+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49815317"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    },
+    {
+      "id": 49815426,
+      "organization_id": "IL72",
+      "url": "https://www.petfinder.com/dog/frida-49815426/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "English Bulldog",
+        "secondary": "Boxer",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "White / Cream",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": false,
+        "dogs": true,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Frida",
+      "description": "If you don’t want to start from scratch with a puppy and you want a stalwart friend by your side...",
+      "organization_animal_id": "67651",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815426/1/?bust=1605637952&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815426/1/?bust=1605637952&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815426/1/?bust=1605637952&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815426/1/?bust=1605637952"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815426/1/?bust=1605637952&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815426/1/?bust=1605637952&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815426/1/?bust=1605637952&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/49815426/1/?bust=1605637952"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2020-11-17T18:33:49+0000",
+      "published_at": "2020-11-17T18:33:49+0000",
+      "distance": 0.641,
+      "contact": {
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+          "address1": "1997 N. Clybourn",
+          "address2": null,
+          "city": "Chicago",
+          "state": "IL",
+          "postcode": "60614",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/49815426"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/il72"
+        }
+      }
+    }
+  ],
+  "pagination": {
+    "count_per_page": 20,
+    "total_count": 5036,
+    "current_page": 1,
+    "total_pages": 252,
+    "_links": {
+      "next": {
+        "href": "/v2/animals?location=60614&sort=distance&status=adoptable&page=2"
+      }
+    }
+  }
+}

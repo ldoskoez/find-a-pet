@@ -8,29 +8,13 @@
 import UIKit
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-  
-    //UI Table View functions to determine the number of rows and the content of the cells
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {           return fetchedPosts.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        
-        content.text = fetchedPosts[indexPath.row].title
-        content.secondaryText = String(fetchedPosts[indexPath.row].userId)
-        
-        cell.contentConfiguration = content
-
-        return cell
-    }
     
     //declarations
-    @IBOutlet weak var ZipcodeLabel: UILabel!
     var finalZipcode = ""
+    @IBOutlet weak var ZipcodeLabel: UILabel!
     @IBOutlet weak var SearchTable: UITableView!
     var fetchedPosts = [Post]()
-    
+    var fetchedAnimals : [Animal]!
     
     //Loads the zipcode search
     override func viewDidLoad() {
@@ -41,8 +25,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         ZipcodeLabel.text = "Searching for pets in the zipcode: \(finalZipcode)"
         
-        fetchPostData(completionHandler: processPostData(posts:))
-        
+        //fetchPostData(completionHandler: processPostData(posts:))
+        fetchedAnimals = parse(jsonData: readLocalFile(forName: "pets_60614")!)?.animals
     }
     
     func processPostData (posts : [Post] ){
@@ -80,12 +64,74 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }.resume()
     }
     
+    private func readLocalFile(forName name: String) -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name,
+                                                 ofType: "json"),
+                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                return jsonData
+            }
+        } catch {
+            print(error)
+        }
+        
+        return nil
+    }
+    
+    private func parse(jsonData: Data) -> AnimalsResponse? {
+        do {
+            let animalsResponse = try JSONDecoder().decode(AnimalsResponse.self,
+            from: jsonData) as AnimalsResponse
+            
+            print("Animal ID: ", animalsResponse.animals?[0].id ?? "None")
+            print("Animal Name:  ", animalsResponse.animals?[0].name ?? "None")
+            
+            return animalsResponse
+        } catch {
+            print("decode error")
+        }
+        return nil
+    }
+    
+    
+    //UI Table View functions to determine the number of rows and the content of the cells
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {           return fetchedAnimals.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        
+        let currentAnimal = fetchedAnimals[indexPath.row]
+        content.text = currentAnimal.name
+        content.secondaryText = "\(currentAnimal.gender ?? "") \(currentAnimal.type ?? "")"
+        
+        cell.contentConfiguration = content
+
+        return cell
+    }
+    
+    
+    //struct and class definitions
+    struct AnimalsResponse : Codable{
+        let animals: [Animal]?
+    }
+    
+    struct Animal: Codable {
+        let id: Int?
+        let type: String?
+        let name: String?
+        let gender: String?
+    }
+
     class Post : Codable{
         var userId : Int!
         var id : Int!
         var title : String!
         var body : String!
     }
+    
+    
 }
 
 //extension SearchViewController : UITableViewDelegate{
@@ -95,18 +141,5 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //    }
 //}
 //
-//extension SearchViewController : UITableViewDataSource{
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 3
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-//        cell.textLabel?.text = "Hello world"
-//
-//        return cell
-//    }
-//
-//
-//}
+
 
