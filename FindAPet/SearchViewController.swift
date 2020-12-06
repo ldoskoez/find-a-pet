@@ -7,6 +7,14 @@
 
 import UIKit
 
+class PetTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var petName: UILabel!
+    @IBOutlet weak var petAge: UILabel!
+    @IBOutlet weak var petPic: UIImageView!
+    
+}
+
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     //declarations
@@ -97,16 +105,15 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //UI Table View functions to determine the number of rows and the content of the cells
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {           return fetchedAnimals.count
     }
-    
+        
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PetTableViewCell
+
         let currentAnimal = fetchedAnimals[indexPath.row]
-        content.text = currentAnimal.name
-        content.secondaryText = "\(currentAnimal.gender ?? "") \(currentAnimal.type ?? "")"
-        
-        cell.contentConfiguration = content
+        cell.petName?.text = currentAnimal.name
+        cell.petAge?.text = "\(currentAnimal.gender ?? "") \(currentAnimal.type ?? "")"
+      
+//        cell.contentConfiguration = content
 
         return cell
     }
