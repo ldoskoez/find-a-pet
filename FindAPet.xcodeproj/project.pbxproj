@@ -17,6 +17,8 @@
 		1AD5D21D25759C850065CB1B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D21C25759C850065CB1B /* Validation.swift */; };
 		1AD5D2202575B6730065CB1B /* pets_60614.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5D21F2575B6730065CB1B /* pets_60614.json */; };
 		1AD5D2232575BEDC0065CB1B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5D2222575BEDC0065CB1B /* sample.json */; };
+		1AD5D22B257DD7980065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5D229257DD7970065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf */; };
+		1AD5D22C257DD7980065CB1B /* PlayfairDisplay-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5D22A257DD7970065CB1B /* PlayfairDisplay-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		1AD5D21C25759C850065CB1B /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		1AD5D21F2575B6730065CB1B /* pets_60614.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pets_60614.json; sourceTree = "<group>"; };
 		1AD5D2222575BEDC0065CB1B /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		1AD5D229257DD7970065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Italic-VariableFont_wght.ttf"; path = "../../../../../Downloads/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		1AD5D22A257DD7970065CB1B /* PlayfairDisplay-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-VariableFont_wght.ttf"; path = "../../../../../Downloads/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,18 @@
 				1AD5D21C25759C850065CB1B /* Validation.swift */,
 				1AD5D21F2575B6730065CB1B /* pets_60614.json */,
 				1AD5D2222575BEDC0065CB1B /* sample.json */,
+				1AD5D227257DD6F50065CB1B /* fonts */,
 			);
 			path = FindAPet;
+			sourceTree = "<group>";
+		};
+		1AD5D227257DD6F50065CB1B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1AD5D229257DD7970065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf */,
+				1AD5D22A257DD7970065CB1B /* PlayfairDisplay-VariableFont_wght.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD5D22C257DD7980065CB1B /* PlayfairDisplay-VariableFont_wght.ttf in Resources */,
+				1AD5D22B257DD7980065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */,
 				1AD5D2232575BEDC0065CB1B /* sample.json in Resources */,
 				1AD5D1FA256A1CDF0065CB1B /* LaunchScreen.storyboard in Resources */,
 				1AD5D1F7256A1CDF0065CB1B /* Assets.xcassets in Resources */,
