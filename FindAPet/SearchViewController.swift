@@ -28,8 +28,13 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let type: String?
         let name: String?
         let gender: String?
+        let age: String?
+        let primary_photo_cropped: PrimaryPhotoCropped?
     }
     
+    struct PrimaryPhotoCropped: Codable {
+        var small, medium, large, full: String?
+    }
     
     //declarations
     var finalZipcode = ""
@@ -90,9 +95,14 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let currentAnimal = fetchedAnimals[indexPath.row]
         cell.petName?.text = currentAnimal.name
         cell.petAge?.text = "\(currentAnimal.gender ?? "") \(currentAnimal.type ?? "")"
-//        cell.petPic?.image = UIImage(named: "catdog")
-      
-//        cell.contentConfiguration = content
+        
+        let mediumPic = currentAnimal.primary_photo_cropped?.medium
+        if (mediumPic != nil){
+            let url = NSURL(string: mediumPic!)
+            let data = NSData(contentsOf : url! as URL)
+            let image = UIImage(data : data! as Data)
+            cell.petPic?.image = image
+        }
 
         return cell
     }
