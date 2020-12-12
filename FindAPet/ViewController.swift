@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ZipcodeField: UITextField!
     @IBOutlet weak var ErrorMessage: UILabel!
+    
     var validation = Validation()
     var zipcodeText = ""
     

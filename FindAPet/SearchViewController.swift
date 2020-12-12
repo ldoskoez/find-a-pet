@@ -82,9 +82,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let animalsResponse = try JSONDecoder().decode(AnimalsResponse.self,
             from: jsonData) as AnimalsResponse
             
-//            print("Animal ID: ", animalsResponse.animals?[0].id ?? "None")
-//            print("Animal Name:  ", animalsResponse.animals?[0].name ?? "None")
-            
             return animalsResponse
         } catch {
             print("decode error")
@@ -96,7 +93,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //UI Table View functions to determine the number of rows and the content of the cells
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {           return fetchedAnimals.count
     }
-        
+    
+    //Gets and sets contents of the cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PetTableViewCell
         let currentAnimal = fetchedAnimals[indexPath.row]
@@ -117,15 +115,29 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    //function that is called when a cell is selected
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedAnimal=fetchedAnimals[indexPath.row]
+        if let vc = storyboard?.instantiateViewController(identifier: "PetViewController") as? PetViewController{
+            vc.finalName = selectedAnimal.name ?? ""
+            vc.finalBreed = selectedAnimal.breeds?.primary ?? ""
+            vc.finalAge = selectedAnimal.age ?? ""
+            vc.finalPhoto = selectedAnimal.primary_photo_cropped?.medium ?? ""
+            vc.finalGender = selectedAnimal.gender ?? ""
+            vc.finalType = selectedAnimal.type ?? ""
+            }
+
+        performSegue(withIdentifier: "selectPet", sender: self)
+
+
+    }
+    
     
 }
 
-//extension SearchViewController : UITableViewDelegate{
-//
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("hi boo")
-//    }
-//}
-//
+
+
+
+
 
 

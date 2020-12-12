@@ -19,6 +19,7 @@
 		1AD5D2232575BEDC0065CB1B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5D2222575BEDC0065CB1B /* sample.json */; };
 		1AD5D22B257DD7980065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5D229257DD7970065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf */; };
 		1AD5D22C257DD7980065CB1B /* PlayfairDisplay-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5D22A257DD7970065CB1B /* PlayfairDisplay-VariableFont_wght.ttf */; };
+		1AD5D23925847B480065CB1B /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D23825847B480065CB1B /* PetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1AD5D2222575BEDC0065CB1B /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		1AD5D229257DD7970065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Italic-VariableFont_wght.ttf"; path = "../../../../../Downloads/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		1AD5D22A257DD7970065CB1B /* PlayfairDisplay-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-VariableFont_wght.ttf"; path = "../../../../../Downloads/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		1AD5D23825847B480065CB1B /* PetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				1AD5D1EF256A1CDC0065CB1B /* SceneDelegate.swift */,
 				1AD5D1F1256A1CDC0065CB1B /* ViewController.swift */,
 				1AD5D206256A24D00065CB1B /* SearchViewController.swift */,
+				1AD5D23825847B480065CB1B /* PetViewController.swift */,
 				1AD5D1F3256A1CDC0065CB1B /* Main.storyboard */,
 				1AD5D1F6256A1CDF0065CB1B /* Assets.xcassets */,
 				1AD5D1F8256A1CDF0065CB1B /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 				1AD5D1EE256A1CDC0065CB1B /* AppDelegate.swift in Sources */,
 				1AD5D207256A24D00065CB1B /* SearchViewController.swift in Sources */,
 				1AD5D21D25759C850065CB1B /* Validation.swift in Sources */,
+				1AD5D23925847B480065CB1B /* PetViewController.swift in Sources */,
 				1AD5D1F0256A1CDC0065CB1B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
