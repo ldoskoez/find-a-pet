@@ -102,8 +102,10 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let data = NSData(contentsOf : url! as URL)
             let image = UIImage(data : data! as Data)
             cell.petPic?.image = image
+        }else{
+            cell.petPic?.image = UIImage(named: "catdog")
         }
-
+        
         return cell
     }
     
