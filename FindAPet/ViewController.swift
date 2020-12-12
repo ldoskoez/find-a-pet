@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     var validation = Validation()
     var zipcodeText = ""
     
+
+    
     //Makes the num keyboard disappear after touch on screen
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         ZipcodeField.resignFirstResponder()

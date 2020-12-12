@@ -11,6 +11,7 @@ class PetTableViewCell: UITableViewCell {
     @IBOutlet weak var petPic: UIImageView!
     @IBOutlet weak var petAge: UILabel!
     @IBOutlet weak var petName: UILabel!
+    @IBOutlet weak var petBreed: UILabel!
     
     
 }
@@ -30,12 +31,18 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let gender: String?
         let age: String?
         let primary_photo_cropped: PrimaryPhotoCropped?
+        let breeds: Breeds?
     }
     
     struct PrimaryPhotoCropped: Codable {
         var small, medium, large, full: String?
     }
     
+    struct Breeds: Codable {
+        var primary: String?
+        var secondary: String?
+        var mixed, unknown: Bool?
+    }
     //declarations
     var finalZipcode = ""
     @IBOutlet weak var ZipcodeLabel: UILabel!
@@ -94,7 +101,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PetTableViewCell
         let currentAnimal = fetchedAnimals[indexPath.row]
         cell.petName?.text = currentAnimal.name
-        cell.petAge?.text = "\(currentAnimal.gender ?? "") \(currentAnimal.type ?? "")"
+        cell.petAge?.text = "\(currentAnimal.age ?? "") \(currentAnimal.gender ?? "")"
+        cell.petBreed?.text = "\(currentAnimal.breeds?.primary ?? "") \(currentAnimal.type ?? "")"
         
         let mediumPic = currentAnimal.primary_photo_cropped?.medium
         if (mediumPic != nil){
