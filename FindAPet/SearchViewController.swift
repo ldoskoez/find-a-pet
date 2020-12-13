@@ -24,25 +24,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let animals: [Animal]?
     }
     
-    struct Animal: Codable {
-        let id: Int?
-        let type: String?
-        let name: String?
-        let gender: String?
-        let age: String?
-        let primary_photo_cropped: PrimaryPhotoCropped?
-        let breeds: Breeds?
-    }
-    
-    struct PrimaryPhotoCropped: Codable {
-        var small, medium, large, full: String?
-    }
-    
-    struct Breeds: Codable {
-        var primary: String?
-        var secondary: String?
-        var mixed, unknown: Bool?
-    }
     //declarations
     var finalZipcode = ""
     @IBOutlet weak var ZipcodeLabel: UILabel!
@@ -117,27 +98,30 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     //function that is called when a cell is selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedAnimal=fetchedAnimals[indexPath.row]
-        if let vc = storyboard?.instantiateViewController(identifier: "PetViewController") as? PetViewController{
-            vc.finalName = selectedAnimal.name ?? ""
-            vc.finalBreed = selectedAnimal.breeds?.primary ?? ""
-            vc.finalAge = selectedAnimal.age ?? ""
-            vc.finalPhoto = selectedAnimal.primary_photo_cropped?.medium ?? ""
-            vc.finalGender = selectedAnimal.gender ?? ""
-            vc.finalType = selectedAnimal.type ?? ""
-            }
+//        let selectedAnimal=fetchedAnimals[indexPath.row]
+//        let vc = PetViewController()
+//        vc.finalName = selectedAnimal.name ?? ""
+//        vc.finalBreed = selectedAnimal.breeds?.primary ?? ""
+//        vc.finalAge = selectedAnimal.age ?? ""
+//        vc.finalPhoto = selectedAnimal.primary_photo_cropped?.medium ?? ""
+//        vc.finalGender = selectedAnimal.gender ?? ""
+//        vc.finalType = selectedAnimal.type ?? ""
 
         performSegue(withIdentifier: "selectPet", sender: self)
 
-
-    }
-    
-    
 }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selectPet" ,
+            let vc = segue.destination as? PetViewController ,
+            let indexPath = self.SearchTable.indexPathForSelectedRow {
+            let selectedAnimal = fetchedAnimals[indexPath.row]
+            vc.finalAnimal = selectedAnimal
+        }
+    }
 
 
-
+}
 
 
 

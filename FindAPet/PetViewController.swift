@@ -8,14 +8,8 @@
 import UIKit
 
 class PetViewController: UIViewController {
-
-    var finalName = ""
-    var finalBreed = ""
-    var finalAge = ""
-    var finalGender = ""
-    var finalPhoto = ""
-    var finalType = ""
-
+    
+    var finalAnimal: Animal?
     @IBOutlet weak var petName: UILabel!
     @IBOutlet weak var petAge: UILabel!
     @IBOutlet weak var petBreed: UILabel!
@@ -24,15 +18,16 @@ class PetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        petName?.text = finalName
-        petAge?.text = "\(finalAge) \(finalGender)"
-        petBreed?.text = "\(finalBreed) \(finalType)"
+        petName?.text = finalAnimal?.name
+        petAge?.text = "\(finalAnimal?.age ?? "Unknown") \(finalAnimal?.gender ?? "Unknown")"
+        petBreed?.text = "\(finalAnimal?.breeds?.primary ?? "Unknown") \(finalAnimal?.type ?? "Unknowns")"
 
-        let url = NSURL(string: finalPhoto)
+        let url = NSURL(string: (finalAnimal?.primary_photo_cropped?.medium)!)
         let data = NSData(contentsOf : url! as URL)
         let image = UIImage(data : data! as Data)
         petPic?.image = image
     }
+    
 
 
     

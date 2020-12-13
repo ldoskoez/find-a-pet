@@ -20,6 +20,9 @@
 		1AD5D22B257DD7980065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5D229257DD7970065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf */; };
 		1AD5D22C257DD7980065CB1B /* PlayfairDisplay-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5D22A257DD7970065CB1B /* PlayfairDisplay-VariableFont_wght.ttf */; };
 		1AD5D23925847B480065CB1B /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D23825847B480065CB1B /* PetViewController.swift */; };
+		1AD5D23E25848FAA0065CB1B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D23D25848FA90065CB1B /* Animal.swift */; };
+		1AD5D24125848FE10065CB1B /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D24025848FE10065CB1B /* Breeds.swift */; };
+		1AD5D244258490050065CB1B /* PrimaryPhotoCropped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		1AD5D229257DD7970065CB1B /* PlayfairDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Italic-VariableFont_wght.ttf"; path = "../../../../../Downloads/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		1AD5D22A257DD7970065CB1B /* PlayfairDisplay-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-VariableFont_wght.ttf"; path = "../../../../../Downloads/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		1AD5D23825847B480065CB1B /* PetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
+		1AD5D23D25848FA90065CB1B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		1AD5D24025848FE10065CB1B /* Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
+		1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryPhotoCropped.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				1AD5D21F2575B6730065CB1B /* pets_60614.json */,
 				1AD5D2222575BEDC0065CB1B /* sample.json */,
 				1AD5D227257DD6F50065CB1B /* fonts */,
+				1AD5D23D25848FA90065CB1B /* Animal.swift */,
+				1AD5D24025848FE10065CB1B /* Breeds.swift */,
+				1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */,
 			);
 			path = FindAPet;
 			sourceTree = "<group>";
@@ -174,6 +183,9 @@
 				1AD5D1EE256A1CDC0065CB1B /* AppDelegate.swift in Sources */,
 				1AD5D207256A24D00065CB1B /* SearchViewController.swift in Sources */,
 				1AD5D21D25759C850065CB1B /* Validation.swift in Sources */,
+				1AD5D24125848FE10065CB1B /* Breeds.swift in Sources */,
+				1AD5D23E25848FAA0065CB1B /* Animal.swift in Sources */,
+				1AD5D244258490050065CB1B /* PrimaryPhotoCropped.swift in Sources */,
 				1AD5D23925847B480065CB1B /* PetViewController.swift in Sources */,
 				1AD5D1F0256A1CDC0065CB1B /* SceneDelegate.swift in Sources */,
 			);
