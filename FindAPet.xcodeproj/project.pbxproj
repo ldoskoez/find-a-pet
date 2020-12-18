@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A6A1E3B258C462400FE4223 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A1E3A258C462400FE4223 /* Environment.swift */; };
 		1AD5D1EE256A1CDC0065CB1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D1ED256A1CDC0065CB1B /* AppDelegate.swift */; };
 		1AD5D1F0256A1CDC0065CB1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D1EF256A1CDC0065CB1B /* SceneDelegate.swift */; };
 		1AD5D1F2256A1CDC0065CB1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D1F1256A1CDC0065CB1B /* ViewController.swift */; };
@@ -23,9 +24,11 @@
 		1AD5D23E25848FAA0065CB1B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D23D25848FA90065CB1B /* Animal.swift */; };
 		1AD5D24125848FE10065CB1B /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D24025848FE10065CB1B /* Breeds.swift */; };
 		1AD5D244258490050065CB1B /* PrimaryPhotoCropped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */; };
+		1AD5D2482585AABB0065CB1B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D2472585AABB0065CB1B /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A6A1E3A258C462400FE4223 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1AD5D1EA256A1CDC0065CB1B /* FindAPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindAPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD5D1ED256A1CDC0065CB1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AD5D1EF256A1CDC0065CB1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		1AD5D23D25848FA90065CB1B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		1AD5D24025848FE10065CB1B /* Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
 		1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryPhotoCropped.swift; sourceTree = "<group>"; };
+		1AD5D2472585AABB0065CB1B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,22 +80,24 @@
 		1AD5D1EC256A1CDC0065CB1B /* FindAPet */ = {
 			isa = PBXGroup;
 			children = (
+				1AD5D227257DD6F50065CB1B /* fonts */,
 				1AD5D1ED256A1CDC0065CB1B /* AppDelegate.swift */,
-				1AD5D1EF256A1CDC0065CB1B /* SceneDelegate.swift */,
-				1AD5D1F1256A1CDC0065CB1B /* ViewController.swift */,
 				1AD5D206256A24D00065CB1B /* SearchViewController.swift */,
 				1AD5D23825847B480065CB1B /* PetViewController.swift */,
-				1AD5D1F3256A1CDC0065CB1B /* Main.storyboard */,
-				1AD5D1F6256A1CDF0065CB1B /* Assets.xcassets */,
-				1AD5D1F8256A1CDF0065CB1B /* LaunchScreen.storyboard */,
-				1AD5D1FB256A1CDF0065CB1B /* Info.plist */,
-				1AD5D21C25759C850065CB1B /* Validation.swift */,
+				1AD5D1F1256A1CDC0065CB1B /* ViewController.swift */,
+				1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */,
 				1AD5D21F2575B6730065CB1B /* pets_60614.json */,
 				1AD5D2222575BEDC0065CB1B /* sample.json */,
-				1AD5D227257DD6F50065CB1B /* fonts */,
 				1AD5D23D25848FA90065CB1B /* Animal.swift */,
+				1A6A1E3A258C462400FE4223 /* Environment.swift */,
 				1AD5D24025848FE10065CB1B /* Breeds.swift */,
-				1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */,
+				1AD5D2472585AABB0065CB1B /* Colors.swift */,
+				1AD5D1F3256A1CDC0065CB1B /* Main.storyboard */,
+				1AD5D1F8256A1CDF0065CB1B /* LaunchScreen.storyboard */,
+				1AD5D1EF256A1CDC0065CB1B /* SceneDelegate.swift */,
+				1AD5D1F6256A1CDF0065CB1B /* Assets.xcassets */,
+				1AD5D21C25759C850065CB1B /* Validation.swift */,
+				1AD5D1FB256A1CDF0065CB1B /* Info.plist */,
 			);
 			path = FindAPet;
 			sourceTree = "<group>";
@@ -180,11 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD5D1F2256A1CDC0065CB1B /* ViewController.swift in Sources */,
+				1AD5D2482585AABB0065CB1B /* Colors.swift in Sources */,
 				1AD5D1EE256A1CDC0065CB1B /* AppDelegate.swift in Sources */,
 				1AD5D207256A24D00065CB1B /* SearchViewController.swift in Sources */,
 				1AD5D21D25759C850065CB1B /* Validation.swift in Sources */,
 				1AD5D24125848FE10065CB1B /* Breeds.swift in Sources */,
 				1AD5D23E25848FAA0065CB1B /* Animal.swift in Sources */,
+				1A6A1E3B258C462400FE4223 /* Environment.swift in Sources */,
 				1AD5D244258490050065CB1B /* PrimaryPhotoCropped.swift in Sources */,
 				1AD5D23925847B480065CB1B /* PetViewController.swift in Sources */,
 				1AD5D1F0256A1CDC0065CB1B /* SceneDelegate.swift in Sources */,
@@ -335,6 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VHTSX8YK3;
 				INFOPLIST_FILE = FindAPet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VHTSX8YK3;
 				INFOPLIST_FILE = FindAPet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

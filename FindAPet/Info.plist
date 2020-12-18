@@ -57,8 +57,8 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>PlayfairDisplay-Italic-VariableFont_wght.ttf</string>
 		<string>PlayfairDisplay-VariableFont_wght.ttf</string>
+		<string>PlayfairDisplay-Italic-VariableFont_wght.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
