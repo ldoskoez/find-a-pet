@@ -17,13 +17,29 @@ class PetViewController: UIViewController {
     
     //Pets relationship with other beings
     @IBOutlet weak var petGKids: UILabel!
-    @IBOutlet weak var petGCat: UILabel!
     @IBOutlet weak var petGDog: UILabel!
+    @IBOutlet weak var petGCat: UILabel!
+    
     
     //buttons
-    @IBOutlet weak var learnMore: UIButton!
-    @IBOutlet weak var adoptMe: UIButton!
-    @IBOutlet weak var findMe: UIButton!
+    //email
+    @IBAction func learnMore(_ sender: Any) {
+        if let url = NSURL(string: (finalAnimal?.url)!){
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+    }
+    
+    //call
+    @IBAction func adoptMe(_ sender: Any) {
+        print((finalAnimal?.contact?.phone)!)
+        guard let url = URL(string: "tel://" + (finalAnimal?.contact?.phone)!) else{ return}
+        UIApplication.shared.canOpenURL(url)
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    @IBAction func findMe(_ sender: Any) {
+    }
+    
+    
     
     
     override func viewDidLoad() {
@@ -62,12 +78,6 @@ class PetViewController: UIViewController {
         let data = NSData(contentsOf : url! as URL)
         let image = UIImage(data : data! as Data)
         petPic?.image = image
-    }
-    
-    @IBAction func learnMore(sender: AnyObject) {
-        if let url = NSURL(string: (finalAnimal?.url)!){
-            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
-        }
     }
     
 

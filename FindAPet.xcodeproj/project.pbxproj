@@ -25,6 +25,8 @@
 		1AD5D24125848FE10065CB1B /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D24025848FE10065CB1B /* Breeds.swift */; };
 		1AD5D244258490050065CB1B /* PrimaryPhotoCropped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */; };
 		1AD5D2482585AABB0065CB1B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D2472585AABB0065CB1B /* Colors.swift */; };
+		1AFF1A8325AFC88B00024EB2 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF1A8225AFC88B00024EB2 /* Contact.swift */; };
+		1AFF1A8625AFC96C00024EB2 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF1A8525AFC96C00024EB2 /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		1AD5D24025848FE10065CB1B /* Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
 		1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryPhotoCropped.swift; sourceTree = "<group>"; };
 		1AD5D2472585AABB0065CB1B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1AFF1A8225AFC88B00024EB2 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		1AFF1A8525AFC96C00024EB2 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +86,15 @@
 			children = (
 				1AD5D227257DD6F50065CB1B /* fonts */,
 				1AD5D1ED256A1CDC0065CB1B /* AppDelegate.swift */,
+				1AD5D1F1256A1CDC0065CB1B /* ViewController.swift */,
 				1AD5D206256A24D00065CB1B /* SearchViewController.swift */,
 				1AD5D23825847B480065CB1B /* PetViewController.swift */,
-				1AD5D1F1256A1CDC0065CB1B /* ViewController.swift */,
-				1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */,
 				1AD5D21F2575B6730065CB1B /* pets_60614.json */,
 				1AD5D2222575BEDC0065CB1B /* sample.json */,
 				1AD5D23D25848FA90065CB1B /* Animal.swift */,
+				1AFF1A8225AFC88B00024EB2 /* Contact.swift */,
+				1AFF1A8525AFC96C00024EB2 /* Address.swift */,
+				1AD5D243258490050065CB1B /* PrimaryPhotoCropped.swift */,
 				1A6A1E3A258C462400FE4223 /* Environment.swift */,
 				1AD5D24025848FE10065CB1B /* Breeds.swift */,
 				1AD5D2472585AABB0065CB1B /* Colors.swift */,
@@ -185,7 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFF1A8325AFC88B00024EB2 /* Contact.swift in Sources */,
 				1AD5D1F2256A1CDC0065CB1B /* ViewController.swift in Sources */,
+				1AFF1A8625AFC96C00024EB2 /* Address.swift in Sources */,
 				1AD5D2482585AABB0065CB1B /* Colors.swift in Sources */,
 				1AD5D1EE256A1CDC0065CB1B /* AppDelegate.swift in Sources */,
 				1AD5D207256A24D00065CB1B /* SearchViewController.swift in Sources */,

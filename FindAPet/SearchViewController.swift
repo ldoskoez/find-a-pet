@@ -36,7 +36,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         SearchTable.delegate = self
         SearchTable.dataSource = self
-        ZipcodeLabel.text = "Searching for pets in the zipcode: \(finalZipcode)"
+        ZipcodeLabel.text = "Displaying pets in: \(finalZipcode)"
         
         //fetchPostData(completionHandler: processPostData(posts:))
         //Fetches data from json file to parse into readable animals for adoption
