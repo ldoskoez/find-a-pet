@@ -1,0 +1,56 @@
+{
+    "organization": {
+        "id": "IL72",
+        "name": "PAWS Chicago",
+        "email": "adoptions@pawschicago.org",
+        "phone": "(773) 935-7297",
+        "address": {
+            "address1": "1997 N. Clybourn",
+            "address2": null,
+            "city": "Chicago",
+            "state": "IL",
+            "postcode": "60614",
+            "country": "US"
+        },
+        "hours": {
+            "monday": "12pm-7pm",
+            "tuesday": "12pm-7pm",
+            "wednesday": "12pm-7pm",
+            "thursday": "12pm-7pm",
+            "friday": "12pm-7pm",
+            "saturday": "11am-6pm",
+            "sunday": "11am-6pm"
+        },
+        "url": "https://www.petfinder.com/member/us/il/chicago/paws-chicago-il72/?referrer_id=5f33d225-fabf-4ebf-861b-3f72077d83d8",
+        "website": "http://www.pawschicago.org",
+        "mission_statement": "PAWS Chicago is the city&#039;s largest No Kill humane organization, focused on solutions to end the killing of homeless pets....",
+        "adoption": {
+            "policy": "To adopt a cat or dog from PAWS Chicago:\r\n\r\n\t    - Be at least 21 years of age.\r\n\t    - Have a...",
+            "url": "http://www.pawschicago.org/our-work/pet-adoption/adoption-process/"
+        },
+        "social_media": {
+            "facebook": "http://www.facebook.com/pawschicago",
+            "twitter": "https://twitter.com/pawschicago",
+            "youtube": "http://www.youtube.com/user/pawschicagoadoption",
+            "instagram": "http://www.instagram.com/pawschicago",
+            "pinterest": null
+        },
+        "photos": [
+            {
+                "small": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/30470/1/?bust=1560466709&width=100",
+                "medium": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/30470/1/?bust=1560466709&width=300",
+                "large": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/30470/1/?bust=1560466709&width=600",
+                "full": "https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/30470/1/?bust=1560466709"
+            }
+        ],
+        "distance": null,
+        "_links": {
+            "self": {
+                "href": "/v2/organizations/il72"
+            },
+            "animals": {
+                "href": "/v2/animals?organization=il72"
+            }
+        }
+    }
+}

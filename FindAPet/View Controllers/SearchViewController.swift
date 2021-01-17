@@ -30,6 +30,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var SearchTable: UITableView!
     var fetchedAnimals : [Animal]!
     
+    
     //Loads the zipcode search
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         //fetchPostData(completionHandler: processPostData(posts:))
         //Fetches data from json file to parse into readable animals for adoption
         fetchedAnimals = parse(jsonData: readLocalFile(forName: "pets_60614")!)?.animals
+        
     }
     
     
