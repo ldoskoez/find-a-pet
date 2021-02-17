@@ -9,15 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var ZipcodeField: UITextField!
     @IBOutlet weak var ErrorMessage: UILabel!
     
     var validation = Validation()
     var zipcodeText = ""
-    
 
-    
     //Makes the num keyboard disappear after touch on screen
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         ZipcodeField.resignFirstResponder()
@@ -33,6 +30,7 @@ class ViewController: UIViewController {
             ErrorMessage.text = "Please Enter a Valid Zipcode."
            return
         }
+
         self.zipcodeText = ZipcodeField.text ?? ""
         performSegue(withIdentifier: "search", sender: self)
     }
@@ -49,7 +47,4 @@ extension ViewController : UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
-    
 }
-

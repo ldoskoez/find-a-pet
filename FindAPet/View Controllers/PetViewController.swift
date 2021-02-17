@@ -27,15 +27,13 @@ class PetViewController: UIViewController {
         let organization: Organization?
     }
     
-    
     //buttons
-    //email
+    //opens petfinder web
     @IBAction func learnMore(_ sender: Any) {
         if let url = NSURL(string: (finalAnimal?.url)!){
             UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
         }
     }
-    
     //call
     @IBAction func adoptMe(_ sender: Any) {
         print((finalAnimal?.contact?.phone)!)
@@ -43,6 +41,7 @@ class PetViewController: UIViewController {
         UIApplication.shared.canOpenURL(url)
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
+    //map
     @IBAction func findMe(_ sender: Any) {
         let geocoder = CLGeocoder()
         let finalAddr = finalAnimal?.contact?.address
@@ -53,7 +52,6 @@ class PetViewController: UIViewController {
           if let placemarks = placemarksOptional {
             print("placemark| \(String(describing: placemarks.first))")
             if let location = placemarks.first?.location {
-//              let query = "?ll=\(location.coordinate.latitude),\(location.coordinate.longitude)"
                 let latitude: CLLocationDegrees = location.coordinate.latitude
                 let longitude: CLLocationDegrees = location.coordinate.longitude
 
@@ -68,9 +66,6 @@ class PetViewController: UIViewController {
                 let mapItem = MKMapItem(placemark: placemark)
                 mapItem.name = self.fetchedOrg?.name
                 mapItem.openInMaps(launchOptions: options)
-//              let path = "http://maps.apple.com/" + query
-//              if let url = NSURL(string: path) {
-//                UIApplication.shared.open(url as URL)
               } else {
                 // Could not construct url. Handle error.
               }
@@ -81,14 +76,9 @@ class PetViewController: UIViewController {
         }
     }
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchedOrg = parse(jsonData: readLocalFile(forName: "orgIL72")!)?.organization
-        
         petName?.text = finalAnimal?.name
         petAge?.text = "\(finalAnimal?.age ?? "Unknown") \(finalAnimal?.gender ?? "Unknown")"
         petBreed?.text = "\(finalAnimal?.breeds?.primary ?? "Unknown") \(finalAnimal?.type ?? "Unknowns")"
@@ -116,10 +106,8 @@ class PetViewController: UIViewController {
         } else{
             petGDog?.text = "Dogs: Unknown"
         }
-        
-        
 
-        let url = NSURL(string: (finalAnimal?.primary_photo_cropped?.medium)!)
+        let url = NSURL(string: (finalAnimal?.primary_photo_cropped?.medium) ?? "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f1257514-4e00-461f-877f-8dd37dfee9ce/dbitvu2-6dd9a4f7-2e94-47a2-a094-e098063ac639.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZjEyNTc1MTQtNGUwMC00NjFmLTg3N2YtOGRkMzdkZmVlOWNlXC9kYml0dnUyLTZkZDlhNGY3LTJlOTQtNDdhMi1hMDk0LWUwOTgwNjNhYzYzOS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.9TYVg6rfyzpa-wI-Ro5T2Mi2uKiqrJM9cShOg8mCHfs")
         let data = NSData(contentsOf : url! as URL)
         let image = UIImage(data : data! as Data)
         petPic?.image = image
@@ -150,10 +138,4 @@ class PetViewController: UIViewController {
         }
         return nil
     }
-    
-
-
-    
-    
-
 }

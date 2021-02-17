@@ -18,18 +18,12 @@ class PetTableViewCell: UITableViewCell {
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
-    
-    //struct definitions
-    struct AnimalsResponse : Codable{
-        let animals: [Animal]?
-    }
-    
     //declarations
     var finalZipcode = ""
     @IBOutlet weak var ZipcodeLabel: UILabel!
     @IBOutlet weak var SearchTable: UITableView!
     var fetchedAnimals : [Animal]!
-    
+    let animalList = AnimalList()
     
     //Loads the zipcode search
     override func viewDidLoad() {
@@ -38,43 +32,16 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         SearchTable.delegate = self
         SearchTable.dataSource = self
         ZipcodeLabel.text = "Displaying pets in: \(finalZipcode)"
-        
-        //fetchPostData(completionHandler: processPostData(posts:))
-        //Fetches data from json file to parse into readable animals for adoption
-        fetchedAnimals = parse(jsonData: readLocalFile(forName: "pets_60614")!)?.animals
-        
-    }
-    
-    
-    private func readLocalFile(forName name: String) -> Data? {
-        do {
-            if let bundlePath = Bundle.main.path(forResource: name,
-                                                 ofType: "json"),
-                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
-                return jsonData
+        animalList.fetchAnimals(){ animalsResponse in
+            self.fetchedAnimals = animalsResponse?.animals
+            DispatchQueue.main.async{
+                self.SearchTable.reloadData()
             }
-        } catch {
-            print(error)
         }
-        
-        return nil
     }
-    
-    private func parse(jsonData: Data) -> AnimalsResponse? {
-        do {
-            let animalsResponse = try JSONDecoder().decode(AnimalsResponse.self,
-            from: jsonData) as AnimalsResponse
-            
-            return animalsResponse
-        } catch {
-            print("decode error")
-        }
-        return nil
-    }
-    
     
     //UI Table View functions to determine the number of rows and the content of the cells
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {           return fetchedAnimals.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {           return fetchedAnimals?.count ?? 0
     }
     
     //Gets and sets contents of the cell
@@ -91,38 +58,25 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let data = NSData(contentsOf : url! as URL)
             let image = UIImage(data : data! as Data)
             cell.petPic?.image = image
-        }else{
+        } else{
             cell.petPic?.image = UIImage(named: "catdog")
         }
-        
         return cell
     }
     
     //function that is called when a cell is selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let selectedAnimal=fetchedAnimals[indexPath.row]
-//        let vc = PetViewController()
-//        vc.finalName = selectedAnimal.name ?? ""
-//        vc.finalBreed = selectedAnimal.breeds?.primary ?? ""
-//        vc.finalAge = selectedAnimal.age ?? ""
-//        vc.finalPhoto = selectedAnimal.primary_photo_cropped?.medium ?? ""
-//        vc.finalGender = selectedAnimal.gender ?? ""
-//        vc.finalType = selectedAnimal.type ?? ""
-
         performSegue(withIdentifier: "selectPet", sender: self)
-
-}
-
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "selectPet" ,
-            let vc = segue.destination as? PetViewController ,
-            let indexPath = self.SearchTable.indexPathForSelectedRow {
+           let vc = segue.destination as? PetViewController ,
+           let indexPath = self.SearchTable.indexPathForSelectedRow {
             let selectedAnimal = fetchedAnimals[indexPath.row]
             vc.finalAnimal = selectedAnimal
         }
     }
-
-
 }
 
 
