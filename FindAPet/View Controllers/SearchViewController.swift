@@ -31,13 +31,18 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         SearchTable.delegate = self
         SearchTable.dataSource = self
-        ZipcodeLabel.text = "Displaying pets in: \(finalZipcode)"
-        animalList.fetchAnimals(){ animalsResponse in
+        
+        //hard fetched animals
+//        self.fetchedAnimals = parse(jsonData: readLocalFile(forName: "pets_60614")!)?.animals
+        
+        animalList.fetchAnimals(zipcode: finalZipcode){ animalsResponse in
             self.fetchedAnimals = animalsResponse?.animals
-            DispatchQueue.main.async{
+            DispatchQueue.main.async {
                 self.SearchTable.reloadData()
             }
+
         }
+        ZipcodeLabel.text = "Displaying pets in: \(finalZipcode)"
     }
     
     //UI Table View functions to determine the number of rows and the content of the cells
@@ -52,12 +57,16 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.petAge?.text = "\(currentAnimal.age ?? "") \(currentAnimal.gender ?? "")"
         cell.petBreed?.text = "\(currentAnimal.breeds?.primary ?? "") \(currentAnimal.type ?? "")"
         
-        let mediumPic = currentAnimal.primary_photo_cropped?.medium
-        if (mediumPic != nil){
-            let url = NSURL(string: mediumPic!)
-            let data = NSData(contentsOf : url! as URL)
-            let image = UIImage(data : data! as Data)
-            cell.petPic?.image = image
+        if ((currentAnimal.photos?.count) != 0){
+            let mediumPic = currentAnimal.photos?[0].small
+            if (mediumPic != nil){
+                let url = NSURL(string: mediumPic!)
+                let data = NSData(contentsOf : url! as URL)
+                let image = UIImage(data : data! as Data)
+                cell.petPic?.image = image
+            } else{
+                cell.petPic?.image = UIImage(named: "catdog")
+            }
         } else{
             cell.petPic?.image = UIImage(named: "catdog")
         }

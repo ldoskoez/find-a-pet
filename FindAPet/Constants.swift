@@ -14,7 +14,7 @@ struct K {
     
     static let urlString: (token: String, request: String) = (
         "https://api.petfinder.com/v2/oauth2/token",
-        "https://api.petfinder.com/v2/animals"
+        "https://api.petfinder.com/v2/animals?sort=distance&location="
     )
     static let bearer = "Bearer "
 }

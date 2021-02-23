@@ -16,7 +16,7 @@ class AnimalList{
     var animals : Animal? = nil
     var dispatchGroup = DispatchGroup()
     
-    func fetchAnimals(finished: @escaping (AnimalsResponse?)->Void) {
+    func fetchAnimals(zipcode: String, finished: @escaping (AnimalsResponse?)->Void) {
         guard let url = URL(string: K.urlString.token) else{
             print(Error.invalidURL);
             finished(nil)
@@ -44,7 +44,7 @@ class AnimalList{
                 accessToken = token?.accessToken
                 if token == nil { print(Error.noToken) }
                 
-                guard let url = URL(string: K.urlString.request) else{
+                guard let url = URL(string: K.urlString.request + zipcode) else{
                     print(Error.invalidURL);
                     return
                 }

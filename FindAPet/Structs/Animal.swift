@@ -20,6 +20,7 @@ struct Animal: Codable {
     let description: String?
     let size: String?
     let coat: String?
+    let photos: [Photos]?
     let primary_photo_cropped: PrimaryPhotoCropped?
     let contact: Contact?
 }

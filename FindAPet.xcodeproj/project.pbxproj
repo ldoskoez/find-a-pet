@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1A0C243B25DCB7F500BF9BCA /* AnimalsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0C243A25DCB7F500BF9BCA /* AnimalsResponse.swift */; };
+		1A0C243E25E087F600BF9BCA /* fetchHardAnimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0C243D25E087F600BF9BCA /* fetchHardAnimals.swift */; };
+		1A0C244125E1F50F00BF9BCA /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0C244025E1F50F00BF9BCA /* Photos.swift */; };
 		1A6A1E3B258C462400FE4223 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A1E3A258C462400FE4223 /* Environment.swift */; };
 		1A7AEA5525B3F36C008BF381 /* orgIL72.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A7AEA5425B3F36C008BF381 /* orgIL72.json */; };
 		1A7AEA5E25B40148008BF381 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7AEA5D25B40148008BF381 /* Organization.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		1A0C243A25DCB7F500BF9BCA /* AnimalsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsResponse.swift; sourceTree = "<group>"; };
+		1A0C243D25E087F600BF9BCA /* fetchHardAnimals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchHardAnimals.swift; sourceTree = "<group>"; };
+		1A0C244025E1F50F00BF9BCA /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		1A6A1E3A258C462400FE4223 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1A7AEA5425B3F36C008BF381 /* orgIL72.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = orgIL72.json; sourceTree = "<group>"; };
 		1A7AEA5D25B40148008BF381 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				1A80B89325CA3079009296F4 /* APIKeys.swift */,
 				1A80B89625CA325F009296F4 /* Token.swift */,
 				1A80B89925D60E58009296F4 /* FavoriteCell.swift */,
+				1A0C243D25E087F600BF9BCA /* fetchHardAnimals.swift */,
 			);
 			path = FindAPet;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				1AD5D2472585AABB0065CB1B /* Colors.swift */,
 				1A7AEA5D25B40148008BF381 /* Organization.swift */,
 				1A0C243A25DCB7F500BF9BCA /* AnimalsResponse.swift */,
+				1A0C244025E1F50F00BF9BCA /* Photos.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 				1AFF1A8625AFC96C00024EB2 /* Address.swift in Sources */,
 				1AD5D2482585AABB0065CB1B /* Colors.swift in Sources */,
 				1A7AEA5E25B40148008BF381 /* Organization.swift in Sources */,
+				1A0C243E25E087F600BF9BCA /* fetchHardAnimals.swift in Sources */,
 				1AD5D1EE256A1CDC0065CB1B /* AppDelegate.swift in Sources */,
 				1AD5D207256A24D00065CB1B /* SearchViewController.swift in Sources */,
 				1A80B89425CA3079009296F4 /* APIKeys.swift in Sources */,
@@ -251,6 +258,7 @@
 				1AD5D24125848FE10065CB1B /* Breeds.swift in Sources */,
 				1AD5D23E25848FAA0065CB1B /* Animal.swift in Sources */,
 				1A6A1E3B258C462400FE4223 /* Environment.swift in Sources */,
+				1A0C244125E1F50F00BF9BCA /* Photos.swift in Sources */,
 				1AD5D244258490050065CB1B /* PrimaryPhotoCropped.swift in Sources */,
 				1A80B89A25D60E59009296F4 /* FavoriteCell.swift in Sources */,
 				1AD5D23925847B480065CB1B /* PetViewController.swift in Sources */,

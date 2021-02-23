@@ -12,6 +12,7 @@ import MapKit
 class PetViewController: UIViewController {
     
     var finalAnimal: Animal?
+    var str = ""
     @IBOutlet weak var petName: UILabel!
     @IBOutlet weak var petAge: UILabel!
     @IBOutlet weak var petBreed: UILabel!
@@ -45,8 +46,12 @@ class PetViewController: UIViewController {
     @IBAction func findMe(_ sender: Any) {
         let geocoder = CLGeocoder()
         let finalAddr = finalAnimal?.contact?.address
-        let str = (finalAddr?.address1)! + " " + (finalAddr?.city)!
-        print(str)
+        if (finalAddr?.address1 != nil){
+            str = (finalAddr?.address1)! + " " + (finalAddr?.city)!
+        } else{
+            str = (finalAddr?.city)! + " " + (finalAddr?.state)!
+        }
+        
         
         geocoder.geocodeAddressString(str) { (placemarksOptional, error) -> Void in
           if let placemarks = placemarksOptional {
