@@ -43,8 +43,9 @@ class AnimalList{
                 let token: Token? = try jsonDecoder.decode(Token.self, from: data)
                 accessToken = token?.accessToken
                 if token == nil { print(Error.noToken) }
+                NetworkManager.accessToken = accessToken
                 
-                guard let url = URL(string: K.urlString.request + zipcode) else{
+                guard let url = URL(string: K.urlString.searchrequest + zipcode) else{
                     print(Error.invalidURL);
                     return
                 }
@@ -52,7 +53,7 @@ class AnimalList{
                 //Create data URLRequest using token
                 var urlRequest = URLRequest(url: url)
                 urlRequest.httpMethod = HttpMethod.get.rawValue
-                let value = K.bearer + (accessToken ?? Error.noToken)
+                let value = K.bearer + (NetworkManager.accessToken ?? Error.noToken)
                 urlRequest.addValue(value, forHTTPHeaderField: HttpHeaderField.auth.rawValue)
                 
                 URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in

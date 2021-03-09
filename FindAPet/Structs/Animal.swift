@@ -10,6 +10,7 @@ import Foundation
 struct Animal: Codable {
     let id: Int?
     let type: String?
+    let organization_id: String?
     let breeds: Breeds?
     let colors: Colors?
     let name: String?

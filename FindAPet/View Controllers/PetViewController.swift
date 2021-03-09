@@ -24,9 +24,6 @@ class PetViewController: UIViewController {
     @IBOutlet weak var petGCat: UILabel!
     
     var fetchedOrg : Organization?
-    struct OrgResponse : Codable{
-        let organization: Organization?
-    }
     
     //buttons
     //opens petfinder web
@@ -70,6 +67,7 @@ class PetViewController: UIViewController {
                 let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
                 let mapItem = MKMapItem(placemark: placemark)
                 mapItem.name = self.fetchedOrg?.name
+//                mapItem.name = self.fetchedOrg?.name
                 mapItem.openInMaps(launchOptions: options)
               } else {
                 // Could not construct url. Handle error.
@@ -83,7 +81,32 @@ class PetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchedOrg = parse(jsonData: readLocalFile(forName: "orgIL72")!)?.organization
+        
+        guard let url = URL(string: K.urlString.orgrequest + (finalAnimal?.organization_id)!) else{
+            print(Error.invalidURL);
+            return
+        }
+        print(url)
+        
+        //Create data URLRequest using token
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = HttpMethod.get.rawValue
+        let value = K.bearer + (NetworkManager.accessToken ?? Error.noToken)
+        print(NetworkManager.accessToken!)
+        urlRequest.addValue(value, forHTTPHeaderField: HttpHeaderField.auth.rawValue)
+        
+        URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+            do {
+                guard error == nil else { print(error?.localizedDescription as Any); return }
+                guard let data = data else { print(Error.noData); return }
+                let jsonDecoder = JSONDecoder()
+                let orgResponse = try jsonDecoder.decode(OrgResponse.self, from: data)
+                self.fetchedOrg = orgResponse.organization
+            } catch {
+                print(error.localizedDescription)
+            }
+        }.resume()
+        
         petName?.text = finalAnimal?.name
         petAge?.text = "\(finalAnimal?.age ?? "Unknown") \(finalAnimal?.gender ?? "Unknown")"
         petBreed?.text = "\(finalAnimal?.breeds?.primary ?? "Unknown") \(finalAnimal?.type ?? "Unknowns")"
@@ -112,35 +135,40 @@ class PetViewController: UIViewController {
             petGDog?.text = "Dogs: Unknown"
         }
 
-        let url = NSURL(string: (finalAnimal?.primary_photo_cropped?.medium) ?? "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f1257514-4e00-461f-877f-8dd37dfee9ce/dbitvu2-6dd9a4f7-2e94-47a2-a094-e098063ac639.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZjEyNTc1MTQtNGUwMC00NjFmLTg3N2YtOGRkMzdkZmVlOWNlXC9kYml0dnUyLTZkZDlhNGY3LTJlOTQtNDdhMi1hMDk0LWUwOTgwNjNhYzYzOS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.9TYVg6rfyzpa-wI-Ro5T2Mi2uKiqrJM9cShOg8mCHfs")
-        let data = NSData(contentsOf : url! as URL)
+        let picurl = NSURL(string: (finalAnimal?.primary_photo_cropped?.medium) ?? "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f1257514-4e00-461f-877f-8dd37dfee9ce/dbitvu2-6dd9a4f7-2e94-47a2-a094-e098063ac639.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZjEyNTc1MTQtNGUwMC00NjFmLTg3N2YtOGRkMzdkZmVlOWNlXC9kYml0dnUyLTZkZDlhNGY3LTJlOTQtNDdhMi1hMDk0LWUwOTgwNjNhYzYzOS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.9TYVg6rfyzpa-wI-Ro5T2Mi2uKiqrJM9cShOg8mCHfs")
+        let data = NSData(contentsOf : picurl! as URL)
         let image = UIImage(data : data! as Data)
         petPic?.image = image
     }
     
-    private func readLocalFile(forName name: String) -> Data? {
-        do {
-            if let bundlePath = Bundle.main.path(forResource: name,
-                                                 ofType: "json"),
-                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
-                return jsonData
-            }
-        } catch {
-            print(error)
-        }
-        
-        return nil
-    }
     
-    private func parse(jsonData: Data) -> OrgResponse? {
-        do {
-            let orgResponse = try JSONDecoder().decode(OrgResponse.self,
-            from: jsonData) as OrgResponse
-            
-            return orgResponse
-        } catch {
-            print("decode error")
-        }
-        return nil
-    }
+    
+    
+    
+    
+//    private func readLocalFile(forName name: String) -> Data? {
+//        do {
+//            if let bundlePath = Bundle.main.path(forResource: name,
+//                                                 ofType: "json"),
+//                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+//                return jsonData
+//            }
+//        } catch {
+//            print(error)
+//        }
+//
+//        return nil
+//    }
+//
+//    private func parse(jsonData: Data) -> OrgResponse? {
+//        do {
+//            let orgResponse = try JSONDecoder().decode(OrgResponse.self,
+//            from: jsonData) as OrgResponse
+//
+//            return orgResponse
+//        } catch {
+//            print("decode error")
+//        }
+//        return nil
+//    }
 }

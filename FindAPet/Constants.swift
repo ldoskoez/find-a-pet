@@ -12,9 +12,11 @@ struct K {
     
     static let bodyString = "grant_type=client_credentials&client_id=" + Credential.clientID + "&client_secret=" + Credential.clientSecret
     
-    static let urlString: (token: String, request: String) = (
+    static let urlString: (token: String, searchrequest: String, orgrequest: String) = (
         "https://api.petfinder.com/v2/oauth2/token",
-        "https://api.petfinder.com/v2/animals?sort=distance&location="
+        "https://api.petfinder.com/v2/animals?sort=distance&location=",
+        "https://api.petfinder.com/v2/organizations/"
+        
     )
     static let bearer = "Bearer "
 }
