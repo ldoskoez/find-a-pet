@@ -53,9 +53,25 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PetTableViewCell
         let currentAnimal = fetchedAnimals[indexPath.row]
-        cell.petName?.text = currentAnimal.name
-        cell.petAge?.text = "\(currentAnimal.age ?? "") \(currentAnimal.gender ?? "")"
-        cell.petBreed?.text = "\(currentAnimal.breeds?.primary ?? "") \(currentAnimal.type ?? "")"
+        if (currentAnimal.name != nil){
+            cell.petName?.text = currentAnimal.name
+        }
+        else{
+            cell.petName?.text = "Unknown Name"
+        }
+        if (currentAnimal.age != nil){
+            cell.petAge?.text = "\(currentAnimal.age ?? "") \(currentAnimal.gender ?? "")"
+        }
+        else{
+            cell.petAge?.text = "Unknown Age"
+        }
+        if (currentAnimal.breeds?.primary != nil){
+            cell.petBreed?.text = "\(currentAnimal.breeds?.primary ?? "") \(currentAnimal.type ?? "")"
+        }
+        else{
+            cell.petBreed?.text = "Unknown Breed"
+        }
+        
         
         if ((currentAnimal.photos?.count) != 0){
             let mediumPic = currentAnimal.photos?[0].small

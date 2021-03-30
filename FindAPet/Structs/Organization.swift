@@ -10,4 +10,5 @@ import Foundation
 struct Organization: Codable{
     let id: String?
     let name: String?
+    let email: String?
 }

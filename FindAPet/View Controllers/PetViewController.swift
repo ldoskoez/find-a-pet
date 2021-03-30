@@ -8,8 +8,9 @@
 import UIKit
 import CoreLocation
 import MapKit
+import MessageUI
 
-class PetViewController: UIViewController {
+class PetViewController: UIViewController, MFMailComposeViewControllerDelegate{
     
     var finalAnimal: Animal?
     var str = ""
@@ -27,32 +28,126 @@ class PetViewController: UIViewController {
     
     //buttons
     //opens petfinder web
+//    @IBAction func learnMore(_ sender: Any) {
+//        if let url = NSURL(string: (finalAnimal?.url)!){
+//            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+//        }
+//    }
+    
     @IBAction func learnMore(_ sender: Any) {
-        if let url = NSURL(string: (finalAnimal?.url)!){
-            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        
+        let recipientEmail = self.fetchedOrg?.email ?? "" + ""
+        let subject = "Interested in " + (finalAnimal?.name)!
+        let body = "Hello! I would like to know more information about an animal at your shelter."
+            
+            // Show default mail composer
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients([recipientEmail])
+            mail.setSubject(subject)
+            mail.setMessageBody(body, isHTML: false)
+            
+            present(mail, animated: true)
+        
+        // Show third party email composer if default Mail app is not present
+        } else if let emailUrl = createEmailUrl(to: recipientEmail, subject: subject, body: body) {
+            UIApplication.shared.open(emailUrl)
         }
+        }
+        
+    private func createEmailUrl(to: String, subject: String, body: String) -> URL? {
+        let subjectEncoded = subject.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        let bodyEncoded = body.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        
+        let gmailUrl = URL(string: "googlegmail://co?to=\(to)&subject=\(subjectEncoded)&body=\(bodyEncoded)")
+        let outlookUrl = URL(string: "ms-outlook://compose?to=\(to)&subject=\(subjectEncoded)")
+        let yahooMail = URL(string: "ymail://mail/compose?to=\(to)&subject=\(subjectEncoded)&body=\(bodyEncoded)")
+        let sparkUrl = URL(string: "readdle-spark://compose?recipient=\(to)&subject=\(subjectEncoded)&body=\(bodyEncoded)")
+        let defaultUrl = URL(string: "mailto:\(to)?subject=\(subjectEncoded)&body=\(bodyEncoded)")
+        
+        if let gmailUrl = gmailUrl, UIApplication.shared.canOpenURL(gmailUrl) {
+            return gmailUrl
+        } else if let outlookUrl = outlookUrl, UIApplication.shared.canOpenURL(outlookUrl) {
+            return outlookUrl
+        } else if let yahooMail = yahooMail, UIApplication.shared.canOpenURL(yahooMail) {
+            return yahooMail
+        } else if let sparkUrl = sparkUrl, UIApplication.shared.canOpenURL(sparkUrl) {
+            return sparkUrl
+        }
+        
+        return defaultUrl
     }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+    
+
+    
     //call
     @IBAction func adoptMe(_ sender: Any) {
-        print((finalAnimal?.contact?.phone)!)
-        guard let url = URL(string: "tel://" + (finalAnimal?.contact?.phone)!) else{ return}
+//        print((finalAnimal?.contact?.phone)!)
+//        if (finalAnimal?.contact?.phone == nil){
+//            let alert = UIAlertController(title: "Error", message: "Phone Number Cannot Be Found", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+//                switch action.style{
+//                    case .default:
+//                    print("default")
+//
+//                    case .cancel:
+//                    print("cancel")
+//
+//                    case .destructive:
+//                    print("destructive")
+//
+//                }
+//            }))
+//            self.present(alert, animated: true, completion: nil)
+//        }
+        let trimmedPhone = finalAnimal?.contact?.phone?.replacingOccurrences(of: ")", with: "")
+        let trimmedPhone2 = trimmedPhone?.replacingOccurrences(of: "(", with: "")
+        let trimmedPhone3 = trimmedPhone2!.replacingOccurrences(of: "-", with: "")
+        let trimmedPhone4 = trimmedPhone3.replacingOccurrences(of: " ", with: "")
+
+        guard let url = URL(string: "tel://" + trimmedPhone4) else{ return}
         UIApplication.shared.canOpenURL(url)
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
+    
+    
     //map
     @IBAction func findMe(_ sender: Any) {
         let geocoder = CLGeocoder()
         let finalAddr = finalAnimal?.contact?.address
         if (finalAddr?.address1 != nil){
             str = (finalAddr?.address1)! + " " + (finalAddr?.city)!
-        } else{
+        }
+        else if (finalAddr?.city != nil){
             str = (finalAddr?.city)! + " " + (finalAddr?.state)!
+        }
+        else{
+            let alert = UIAlertController(title: "Error", message: "Address Cannot Be Found", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                switch action.style{
+                    case .default:
+                    print("default")
+                    
+                    case .cancel:
+                    print("cancel")
+                    
+                    case .destructive:
+                    print("destructive")
+                    
+                }
+            }))
+            self.present(alert, animated: true, completion: nil)
         }
         
         
         geocoder.geocodeAddressString(str) { (placemarksOptional, error) -> Void in
           if let placemarks = placemarksOptional {
-            print("placemark| \(String(describing: placemarks.first))")
+
             if let location = placemarks.first?.location {
                 let latitude: CLLocationDegrees = location.coordinate.latitude
                 let longitude: CLLocationDegrees = location.coordinate.longitude
@@ -66,14 +161,49 @@ class PetViewController: UIViewController {
                 ]
                 let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
                 let mapItem = MKMapItem(placemark: placemark)
-                mapItem.name = self.fetchedOrg?.name
-//                mapItem.name = self.fetchedOrg?.name
+                if (self.fetchedOrg?.name != nil){
+                    mapItem.name = self.fetchedOrg?.name
+                }
+                else{
+                    mapItem.name = "Unknown Name"
+                }
                 mapItem.openInMaps(launchOptions: options)
               } else {
                 // Could not construct url. Handle error.
+                let alert = UIAlertController(title: "Error", message: "Map Cannot Be Launched", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                    switch action.style{
+                        case .default:
+                        print("default")
+                        
+                        case .cancel:
+                        print("cancel")
+                        
+                        case .destructive:
+                        print("destructive")
+                        
+                    }
+                }))
+                self.present(alert, animated: true, completion: nil)
+                
               }
             } else {
               // Could not get a location from the geocode request. Handle error.
+                let alert = UIAlertController(title: "Error", message: "Address Cannot Be Found", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                    switch action.style{
+                        case .default:
+                        print("default")
+                        
+                        case .cancel:
+                        print("cancel")
+                        
+                        case .destructive:
+                        print("destructive")
+                        
+                    }
+                }))
+                self.present(alert, animated: true, completion: nil)
             }
           
         }
@@ -83,16 +213,14 @@ class PetViewController: UIViewController {
         super.viewDidLoad()
         
         guard let url = URL(string: K.urlString.orgrequest + (finalAnimal?.organization_id)!) else{
-            print(Error.invalidURL);
             return
         }
-        print(url)
         
         //Create data URLRequest using token
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = HttpMethod.get.rawValue
         let value = K.bearer + (NetworkManager.accessToken ?? Error.noToken)
-        print(NetworkManager.accessToken!)
+//        print(NetworkManager.accessToken!)
         urlRequest.addValue(value, forHTTPHeaderField: HttpHeaderField.auth.rawValue)
         
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
@@ -108,8 +236,8 @@ class PetViewController: UIViewController {
         }.resume()
         
         petName?.text = finalAnimal?.name
-        petAge?.text = "\(finalAnimal?.age ?? "Unknown") \(finalAnimal?.gender ?? "Unknown")"
-        petBreed?.text = "\(finalAnimal?.breeds?.primary ?? "Unknown") \(finalAnimal?.type ?? "Unknowns")"
+        petAge?.text = "\(finalAnimal?.age ?? "Unknown Age") \(finalAnimal?.gender ?? "Unknown Gender")"
+        petBreed?.text = "\(finalAnimal?.breeds?.primary ?? "Unknown Breed") \(finalAnimal?.type ?? "Unknown Type")"
         
         if(finalAnimal?.environment?.children == false){
             petGKids?.text = "Children: No"
