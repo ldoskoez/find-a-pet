@@ -7,15 +7,6 @@
 
 import UIKit
 
-class PetTableViewCell: UITableViewCell {
-    @IBOutlet weak var petPic: UIImageView!
-    @IBOutlet weak var petAge: UILabel!
-    @IBOutlet weak var petName: UILabel!
-    @IBOutlet weak var petBreed: UILabel!
-    
-    
-}
-
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     //declarations
@@ -43,6 +34,9 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         }
         ZipcodeLabel.text = "Displaying pets in: \(finalZipcode)"
+        
+        SearchTable.rowHeight = UITableView.automaticDimension
+        SearchTable.estimatedRowHeight = 600
     }
     
     //UI Table View functions to determine the number of rows and the content of the cells
@@ -51,7 +45,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     //Gets and sets contents of the cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PetTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PetCell
         let currentAnimal = fetchedAnimals[indexPath.row]
         if (currentAnimal.name != nil){
             cell.petName?.text = currentAnimal.name
@@ -74,7 +68,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
         if ((currentAnimal.photos?.count) != 0){
-            let mediumPic = currentAnimal.photos?[0].small
+            let mediumPic = currentAnimal.photos?[0].large
             if (mediumPic != nil){
                 let url = NSURL(string: mediumPic!)
                 let data = NSData(contentsOf : url! as URL)

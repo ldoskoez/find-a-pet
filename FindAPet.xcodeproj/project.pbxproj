@@ -19,7 +19,7 @@
 		1A80B89125CA3052009296F4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80B89025CA3052009296F4 /* Constants.swift */; };
 		1A80B89425CA3079009296F4 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80B89325CA3079009296F4 /* APIKeys.swift */; };
 		1A80B89725CA325F009296F4 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80B89625CA325F009296F4 /* Token.swift */; };
-		1A80B89A25D60E59009296F4 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80B89925D60E58009296F4 /* FavoriteCell.swift */; };
+		1A80B89A25D60E59009296F4 /* PetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80B89925D60E58009296F4 /* PetCell.swift */; };
 		1AD5D1EE256A1CDC0065CB1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D1ED256A1CDC0065CB1B /* AppDelegate.swift */; };
 		1AD5D1F0256A1CDC0065CB1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D1EF256A1CDC0065CB1B /* SceneDelegate.swift */; };
 		1AD5D1F2256A1CDC0065CB1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5D1F1256A1CDC0065CB1B /* ViewController.swift */; };
@@ -53,7 +53,7 @@
 		1A80B89025CA3052009296F4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1A80B89325CA3079009296F4 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		1A80B89625CA325F009296F4 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
-		1A80B89925D60E58009296F4 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		1A80B89925D60E58009296F4 /* PetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCell.swift; sourceTree = "<group>"; };
 		1AD5D1EA256A1CDC0065CB1B /* FindAPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindAPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD5D1ED256A1CDC0065CB1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AD5D1EF256A1CDC0065CB1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 				1A80B89025CA3052009296F4 /* Constants.swift */,
 				1A80B89325CA3079009296F4 /* APIKeys.swift */,
 				1A80B89625CA325F009296F4 /* Token.swift */,
-				1A80B89925D60E58009296F4 /* FavoriteCell.swift */,
+				1A80B89925D60E58009296F4 /* PetCell.swift */,
 				1A0C243D25E087F600BF9BCA /* fetchHardAnimals.swift */,
 				1A0C244B25F7027700BF9BCA /* NetworkManager.swift */,
 			);
@@ -268,7 +268,7 @@
 				1A6A1E3B258C462400FE4223 /* Environment.swift in Sources */,
 				1A0C244125E1F50F00BF9BCA /* Photos.swift in Sources */,
 				1AD5D244258490050065CB1B /* PrimaryPhotoCropped.swift in Sources */,
-				1A80B89A25D60E59009296F4 /* FavoriteCell.swift in Sources */,
+				1A80B89A25D60E59009296F4 /* PetCell.swift in Sources */,
 				1AD5D23925847B480065CB1B /* PetViewController.swift in Sources */,
 				1AD5D1F0256A1CDC0065CB1B /* SceneDelegate.swift in Sources */,
 				1A80B88E25CA2EB1009296F4 /* AnimalList.swift in Sources */,
